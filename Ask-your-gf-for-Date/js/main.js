@@ -31,7 +31,7 @@ function onYesClick() {
 // Runs after one plan is picked: celebration, confetti, then the invitation card.
 function finishDate() {
     try {
-        document.querySelector(".question").textContent = "Yay, See you tomorrow!";
+        document.querySelector(".question").textContent = "Yay, See you!";
         const gif = document.querySelector(".gif");
         gif.src = "image/dance.gif";
         gif.alt = "Celebrating";
