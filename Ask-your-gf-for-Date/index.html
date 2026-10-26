@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Proposal</title>
+    <link rel="icon" href="image/gif1.gif" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/invite.css" />
+</head>
+
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+    <div class="circle7"></div>
+    <div class="circle8"></div>
+    <div class="wrapper">
+        <h2 class="question"></h2>
+        <img class="gif" src="image/gif1.gif" alt="A greeting animation" />
+
+        <div class="btn-grp is-waiting" aria-hidden="true">
+            <button type="button" class="yes-btn">Yes</button>
+            <button type="button" class="no-btn">No</button>
+        </div>
+
+        <div class="plan-grp" id="plan-grp" hidden>
+            <button type="button" class="plan-btn" data-plan="Go karting">Go karting</button>
+            <button type="button" class="plan-btn" data-plan="Wonderla">Wonderla</button>
+        </div>
+
+        <div class="audio">
+            <button type="button" id="music-nudge" class="music-nudge">Tap to play the song</button>
+            <div class="audio-btn">
+                <img id="playPauseButton" src="image/play.png" alt="Play the song" role="button" tabindex="0">
+                <audio id="music" src="audio/LYRICAL_ Kudiye Ni Song  Feat.  Aparshakti Khurana & Sargun Mehta  Neeti Mohan  New Song 2019.mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+    <div id="invite-modal" class="invite-modal" hidden>
+        <div class="invite-backdrop" id="invite-backdrop"></div>
+        <div class="invite-card" role="dialog" aria-modal="true" aria-labelledby="invite-title">
+            <p class="invite-roses" aria-hidden="true">🌹 💗 🌹</p>
+            <h2 id="invite-title">It's a date</h2>
+            <p id="invite-message"></p>
+            <p id="invite-place"></p>
+            <p id="invite-when"></p>
+            <div id="invite-countdown" class="countdown" aria-live="polite">
+                <div class="count-unit">
+                    <span id="count-days" class="count-digit">0</span>
+                    <span class="count-label">days</span>
+                </div>
+                <div class="count-unit">
+                    <span id="count-hours" class="count-digit">0</span>
+                    <span class="count-label">hours</span>
+                </div>
+                <div class="count-unit">
+                    <span id="count-minutes" class="count-digit">0</span>
+                    <span class="count-label">minutes</span>
+                </div>
+                <div class="count-unit">
+                    <span id="count-seconds" class="count-digit">0</span>
+                    <span class="count-label">seconds</span>
+                </div>
+            </div>
+            <p id="invite-arrived" class="invite-arrived" hidden>The date is here.</p>
+            <button type="button" id="invite-close" class="invite-close">Close</button>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/no-button.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/invite.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/plan.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

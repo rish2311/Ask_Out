@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgb(255, 156, 156), rgb(119, 233, 253));
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff1a;
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+}
+
+.wrapper .gif {
+    height: 180px;
+    width: 180px;
+}
+
+h2 {
+    font-family: cursive;
+    font-size: 32px;
+    word-spacing: 13px;
+    color: white;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.82);
+    margin: 15px 0;
+    text-align: center;
+}
+
+.question {
+    min-height: 2.8em;
+}
+
+.btn-grp.is-waiting {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+button {
+    outline: none;
+    width: 140px;
+    margin-top: 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: rgba(230, 1, 131, 0.884);
+    background-color: rgb(255, 236, 250);
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 0 2px 4px grey;
+    border: 2px solid rgb(240, 117, 117);
+    border-radius: 18px;
+    transition: color 500ms ease-out, transform 500ms ease-out, margin 500ms ease-out;
+}
+
+button:hover {
+    color: brown;
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .wrapper .gif {
+        height: 130px;
+        width: 130px;
+    }
+
+    button {
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .wrapper .gif {
+        height: 130px;
+        width: 130px;
+    }
+
+    button {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 466px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    .wrapper .gif {
+        height: 120px;
+        width: 120px;
+    }
+
+    button {
+        width: 100px;
+    }
+}
+
+.yes-btn {
+    --yes-scale: 1;
+    margin-right: 90px;
+    transform: scale(var(--yes-scale));
+}
+
+.plan-grp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 92vw;
+}
+
+.plan-grp[hidden] {
+    display: none;
+}
+
+.plan-btn {
+    width: auto;
+    min-width: 150px;
+    margin-top: 28px;
+    margin-right: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.yes-btn:hover {
+    transform: scale(calc(var(--yes-scale) * 1.06));
+}
+
+@media only screen and (max-width: 402px) {
+    h2 {
+        font-size: 23px;
+    }
+
+    .wrapper .gif {
+        height: 120px;
+        width: 120px;
+    }
+
+    button {
+        width: 100px;
+    }
+
+    .yes-btn {
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    h2 {
+        font-size: 23px;
+        word-spacing: 5px;
+    }
+
+    .wrapper .gif {
+        height: 120px;
+        width: 120px;
+    }
+
+    button {
+        width: 110px;
+        height: 50px;
+    }
+
+    .yes-btn {
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 323px) {
+    h2 {
+        font-size: 23px;
+        word-spacing: 2px;
+    }
+
+    .wrapper .gif {
+        height: 120px;
+        width: 120px;
+    }
+
+    button {
+        width: 110px;
+        height: 50px;
+    }
+
+    .yes-btn {
+        margin-right: 40px;
+    }
+}
+
+.no-btn {
+    position: relative;
+    z-index: 5;
+    touch-action: none;
+    transition: color 200ms ease;
+}
+
+.audio-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    height: 3rem;
+    width: 10rem;
+}
+
+.audio-btn img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding-left: 15px;
+    transition: scale 200ms;
+}
+
+.audio-btn img:hover {
+    scale: 1.1;
+}

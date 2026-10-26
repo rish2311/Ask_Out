@@ -1,0 +1,192 @@
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 20%;
+    width: 9em;
+    height: 9em;
+    border-radius: 30%;
+    box-shadow: 0 0 50px #48c0d8;
+    background: linear-gradient(-25deg, #48b2d8, #41c4f4);
+    animation: circle1Animate 10s infinite;
+}
+
+@keyframes circle1Animate {
+    50% {
+        left: 33%;
+        top: 4%;
+        scale: 1.11;
+    }
+}
+
+.circle2 {
+    position: fixed;
+    bottom: 5%;
+    right: 30%;
+    width: 14em;
+    height: 14em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: circle2Animate 4s infinite;
+}
+
+@keyframes circle2Animate {
+    50% {
+        bottom: 10%;
+        right: 20%;
+    }
+}
+
+.circle3 {
+    position: fixed;
+    top: 0%;
+    left: 80%;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d848bb;
+    background: linear-gradient(-25deg, #d848d1, #f441e2);
+    animation: circle3Animate 14s infinite;
+}
+
+@keyframes circle3Animate {
+    50% {
+        top: 3%;
+        left: 85%;
+        scale: 1.1;
+    }
+}
+
+.circle4 {
+    position: fixed;
+    bottom: 15%;
+    left: 10%;
+    width: 10em;
+    height: 10em;
+    border-radius: 45%;
+    box-shadow: 0 0 50px #d8488b;
+    background: linear-gradient(-25deg, #d8487d, #f44195);
+    animation: circle4Animate 14s infinite;
+}
+
+@keyframes circle4Animate {
+    50% {
+        bottom: 6%;
+        left: 5%;
+    }
+}
+
+.circle5 {
+    position: fixed;
+    bottom: 15%;
+    right: 10%;
+    width: 5em;
+    height: 5em;
+    border-radius: 45%;
+    box-shadow: 0 0 40px #cad848;
+    background: linear-gradient(-25deg, #c7d848, #f4f441);
+    animation: circle5Animate 10s infinite;
+}
+
+@keyframes circle5Animate {
+    50% {
+        bottom: 6%;
+        right: 5%;
+    }
+}
+
+.circle6 {
+    position: fixed;
+    bottom: 50%;
+    left: 10%;
+    width: 5em;
+    height: 5em;
+    border-radius: 45%;
+    box-shadow: 0 0 40px #56d848;
+    background: linear-gradient(-25deg, #48d86a, #41f468);
+    animation: circle6Animate 4s infinite;
+}
+
+@keyframes circle6Animate {
+    50% {
+        bottom: 60%;
+        left: 14%;
+    }
+}
+
+.circle7 {
+    position: fixed;
+    top: 35%;
+    right: 10%;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #48d1d8;
+    background: linear-gradient(-25deg, #48d8d8, #41c4f4);
+    animation: circle7Animate 5s infinite;
+}
+
+@keyframes circle7Animate {
+    50% {
+        top: 45%;
+        right: 15%;
+    }
+}
+
+.circle8 {
+    position: fixed;
+    bottom: 45%;
+    left: 40%;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #d1d848;
+    background: linear-gradient(-25deg, #d8d648, #e8f441);
+    animation: circle8Animate 8s infinite;
+}
+
+@keyframes circle8Animate {
+    50% {
+        bottom: 40%;
+        left: 35%;
+        scale: .8;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .circle2 {
+        width: 13em;
+        height: 13em;
+    }
+
+    .circle4 {
+        width: 8em;
+        height: 8em;
+    }
+}
+
+@media only screen and (max-width: 402px) {
+    .circle4 {
+        width: 8em;
+        height: 8em;
+    }
+
+    .circle2 {
+        width: 11em;
+        height: 11em;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .circle4 {
+        width: 6em;
+        height: 6em;
+    }
+}
+
+@media only screen and (max-width: 323px) {
+    .circle4 {
+        width: 6em;
+        height: 6em;
+    }
+}
